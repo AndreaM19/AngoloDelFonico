@@ -16,7 +16,6 @@
         <!-- Custom styles -->
         <link href="css/Navbar/navbar.css" rel="stylesheet">
         <link href="css/Custom/custom.css" rel="stylesheet">
-        <link href="css/Instrument/instrument.css" rel="stylesheet">
     
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->

@@ -16,7 +16,6 @@
         <!-- Custom styles -->
         <link href="css/Navbar/navbar.css" rel="stylesheet">
         <link href="css/Custom/custom.css" rel="stylesheet">
-        <link href="css/Instrument/instrument.css" rel="stylesheet">
     
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -51,7 +50,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 
-                <a href="#"><h4>Vai alla lista degli strumenti</h4></a>
+                <a href="instruments.php?loc=instr"><h4>Vai alla lista degli strumenti</h4></a>
             </div>
             
             <div class="col-md-4 text-center">

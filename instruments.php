@@ -1,3 +1,7 @@
+<?php
+@ require 'include/Instrument/Classes/InstrumentDataGetter.php';
+?>
+
 <!DOCTYPE html>
     <!-- saved from url=(0050)http://getbootstrap.com/examples/navbar-fixed-top/ -->
     <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -16,7 +20,6 @@
         <!-- Custom styles -->
         <link href="css/Navbar/navbar.css" rel="stylesheet">
         <link href="css/Custom/custom.css" rel="stylesheet">
-        <link href="css/Instrument/instrument.css" rel="stylesheet">
     
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -45,8 +48,25 @@
                 <h2>Lista degli strumenti</h2>
                 <h4>Naviga tra gli strumenti e scoprine tutti i segreti!!</h4>
                 <br>
-               
                 
+                <?php			
+
+				switch (@$_GET['action']) {
+				case "":
+					include ("include/Instrument/categoryList.php");
+					break;
+				case "showInstr":
+					include ("include/Instrument/instrumentList.php");
+					break;
+					case "showInstrData":
+					include ("include/Instrument/instrumentData.php");
+					break;
+				default:
+					echo "<h1>ERROR - Unknow URL</h1><br />";
+					break;
+				}
+				?>
+				
             </div>
             
             <div class="col-md-4 text-center">
