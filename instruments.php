@@ -30,6 +30,9 @@
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+        
+        <!-- JQuery Library -->
+        <script src="js/jquery.min.js"></script>
     </head>
     
     <body>
@@ -39,16 +42,15 @@
         
         <br>
         <div class="banner">
-        <img src="img/banner/ampli_web.jpg" class="img-responsive">
+        <?php 
+        	$bannerPath="img/banner/ampli_web.jpg";
+        ?>
+        <img src="<?php echo $bannerPath?>" class="img-responsive" id="banner">
         </div>
         
         <div class="container">
             <hr>
-            <div class="col-md-8">      
-                <h2>Lista degli strumenti</h2>
-                <h4>Naviga tra gli strumenti e scoprine tutti i segreti!!</h4>
-                <br>
-                
+            <div class="col-md-8">                      
                 <?php			
 
 				switch (@$_GET['action']) {
@@ -69,6 +71,9 @@
 				
             </div>
             
+            
+            
+            
             <div class="col-md-4 text-center">
             <img src="img/test/test-img.jpg" class="img-responsive">
             <br>
@@ -87,9 +92,12 @@
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="js/jquery.min.js"></script>
+        
         <script src="js/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="js/ie10-viewport-bug-workaround.js"></script>
+        <script src="js/tools.js"></script>
+        
+        
     </body>
 </html>

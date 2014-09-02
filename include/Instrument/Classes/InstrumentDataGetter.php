@@ -53,9 +53,7 @@ private $db;//object for db connection
 		$query = DbUtility::queryToDB ( $dbConn, $queryText );
 		while ( $row = mysqli_fetch_array ( $query ) ){
 			$instrInfo=new Instrument($row['instrumentId'],$row['instrumentName'],$row['categoryId'],$row['categoryName']);
-			//$desc, $rec, $eq, $comp, $gate, $banner
 			$instrInfo->setIstrInfo($row['infoDescription'],$row['infoRecording'],$row['infoEq'],$row['infoCompression'],$row['infoGate'],$row['banner']);
-// 			$instrList[]=$instr;
 		}
 		DbUtility::freeMemoryAfterQuery ( $query );
 		DbUtility::disconnectFromDB ( $dbConn );

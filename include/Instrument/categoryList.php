@@ -1,3 +1,7 @@
+<h2>Lista degli strumenti</h2>
+<h4>Naviga tra gli strumenti e scoprine tutti i segreti!!</h4>
+<br>
+
 <?php 
 $dataGetter=new InstrumentDataGetter();
 $catList=$dataGetter->getCategory();
